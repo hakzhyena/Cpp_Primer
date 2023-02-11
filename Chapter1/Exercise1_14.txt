@@ -1,0 +1,4 @@
+Exercise 1.14: Compare and contrast the loops that used a for with those using a
+while. Are there advantages or disadvantages to using either form?
+
+While building the logic while may be simpler, but for loops look much more organized to me. The increment/decrement at the end, initialization at the beginning are part of the loop and without them the loop looks incomplete so to say. So it is harder to miss the initialization and decrement/increment in case of for loops.
