@@ -1,0 +1,5 @@
+Exercise 1.18: Compile and run the program from this section giving it only equal
+values as input. Run it again giving it values in which no number is repeated.
+
+a) When given only same value as input and EOF, it outputs the number of times the same value is entered.
+b) When unique numbers are inputted, it keeps outputting that x is entered 1 times x being the previous input.
