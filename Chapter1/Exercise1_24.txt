@@ -1,0 +1,4 @@
+Exercise 1.24: Test the previous program by giving multiple transactions representing
+multiple ISBNs. The records for each ISBN should be grouped together.
+
+   Have done the same and verified that the records for each ISBNs are grouped together.
