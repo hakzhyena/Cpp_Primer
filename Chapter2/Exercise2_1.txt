@@ -1,10 +1,10 @@
 Exercise 2.1: What are the differences between int, long, long long, and short?
 -> int is atleast as big as short. short can be minimum of 16 bits of size.
--> long is alteast as big as int. int and long are usually of 32 bits size.
+-> long is atleast as big as int. int and long are usually of 32 bits size.
 -> long long is alteast as big as long. long long is usually of 64 bits size. 
 Between an unsigned and a signed type? Between a float and a double?
--> unsigned should be used when both positive and negative numbers needs to be stored. signed should be used for storing only negative numbers and zero. 
+-> signed should be used when both positive and negative numbers need to be stored. unsigned should be used for storing only positive numbers and zero. 
 -> float and double have 7 and 16 significant digits respectively.
 
 Exercise 2.2: To calculate a mortgage payment, what types would you use for the rate, principal, and payment? Explain why you selected each type.
--> For rate - double, for principal - unsigned int, for payment - unsigned int. Rate can be something like 8.7% for example, so that would need float/double. Using double doesn't incur significant run-time performance and it seems to be faster hence double. principal and payment are usually rounded off positive integers and I assume they won't be more than 2 raised to 32 - 1(for a 32 bit unsigned integer) which is approximately 4.2 million. Hence chose unsigned int.
+-> For rate - double, for principal - long long, for payment - long long. Rate can be something like 8.7% for example, so that would need float/double. Using double doesn't incur significant run-time performance and it seems to be faster hence double. principal and payment are usually rounded off positive integers and I assume they can be more than 2 raised to 16 - 1(considering the minimum guranteed size for unsigned int) which is 65535. Hence chose long long.
