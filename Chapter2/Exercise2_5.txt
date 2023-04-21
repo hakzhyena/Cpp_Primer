@@ -1,0 +1,8 @@
+Exercise 2.5: Determine the type of each of the following literals. Explain the differences
+among the literals in each of the four examples:
+(a) ’a’, L’a’, "a", L"a" - character literal, wide chracter literal, string literal, wide string literal
+(b) 10, 10u, 10L, 10uL, 012, 0xC - integer literal, unsigned int literal, long literal, unsigned long literal, octal integer 12, hexadecimal integer C
+(c) 3.14, 3.14f, 3.14L - double literal, float literal, long double literal 
+(d) 10, 10u, 10., 10e-2 - integer literal, unsigned integer literal, double literal, double literal
+
+First group is of character types, second is of integer types, third group is of floating-point types and fourth group is a mix of integer and floating-point types.
