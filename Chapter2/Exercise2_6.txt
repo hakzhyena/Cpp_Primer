@@ -1,0 +1,4 @@
+Exercise 2.6: What, if any, are the differences between the following definitions:
+int month = 9, day = 7; 
+int month = 09, day = 07;
+month in the first line would have value of 9 and day would have value of 7 as they both are assigned with decimal literals, where as month in second line would result in compilation error because 9 is an invalid octal value (just like 2 would be an invalid binary number) as 0 initially represents an octal literal; day would have value of 7 as that's a valid octal value.
