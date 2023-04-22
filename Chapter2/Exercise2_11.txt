@@ -1,0 +1,9 @@
+Exercise 2.11: Explain whether each of the following is a declaration or a definition:
+(a) extern int ix = 1024;
+(b) int iy;
+(c) extern int iz;
+
+(a) extern int ix = 1024; - This is a definition since ix is also initialized explicitly.
+(b) int iy; // This is a declaration also definition because it is also creating storage for that variable.
+(c) extern int iz; //This is a pure declaration. Neat and clean!
+
