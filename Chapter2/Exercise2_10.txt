@@ -1,0 +1,13 @@
+Exercise 2.10: What are the initial values, if any, of each of the following variables?
+std::string global_str;
+int global_int;
+int main()
+{
+int local_int;
+std::string local_str;
+}
+
+global_str would have an initial value of 'empty string'.
+global_int would have an initial value of 0.
+local_int's initial value of would be undefined since it is not default initialized as it is in a function (local scope).
+local_str's initial value would be an 'empty string'.
