@@ -1,0 +1,9 @@
+Exercise 2.9: Explain the following definitions. For those that are illegal, explain
+what’s wrong and how to correct it.
+(a) std::cin >> int input_value; (b) int i = { 3.14 };
+(c) double salary = wage = 9999.99; (d) int i = 3.14;
+
+(a) std::cin >> int input_value; - This is an illegal expression. Here we are defining input_value when we want std::cin to redirect it's input to it. This can be corrected by defining the input_value one line above and using it for input in the next line.
+(b) int i = { 3.14 }; - This expression would result in a warning/error from the compiler because a narrowing conversion has to happen (atleast where the int's size is 16 or 32 bits and double's size is 64 bits). To correct it just initialize int i without list initialization. For example something like int i(3.14); .
+(c) double salary = wage = 9999.99; - If wage is already defined wage would be assigned with 9999.99 and the result of that operation (9999.99) would be assigned to salary. If wage isn't defined it would result in a compilation error in which case wage should be just defined.
+(d) int i = 3.14; - This should work like a charm! Although i would have the truncated value of 3.14 which is 3.
