@@ -1,0 +1,5 @@
+Exercise 2.24: Why is the initialization of p legal but that of lp illegal?
+int i = 42; void *p = &i; long *lp = &i;
+
+Ans:
+Because p is a void pointer. By defintion a void pointer can point to an object of any type, whereas, lp is a pointer of long type and that can only point to an object of long type and since i is of int type it can't point to an int type.

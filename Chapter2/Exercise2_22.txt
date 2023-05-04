@@ -1,0 +1,7 @@
+Exercise 2.22: Assuming p is a pointer to int, explain the following code:
+if (p) // ...
+if (*p) // ...
+
+Ans: 
+if (p) // this condition evaluates if the p is pointing to a pointer or nullptr (or 0), since we assume that p is a pointer to int, this condition returns true
+if (*p) // this condition passes if the value in the integer pointed to by p is non-zero

@@ -1,0 +1,9 @@
+Exercise 2.20: What does the following program do?
+int i = 42;
+int *p1 = &i;
+*p1 = *p1 * *p1;
+
+Ans: 
+int i = 42; //defined an object i of type int
+int *p1 = &i; // defined a pointer p1 of type int and initialized it to point to i
+*p1 = *p1 * *p1; //assigned the object p1 is pointing to meaning i with the value of current i value multiplied by current i value, so i would have multiplication of //42 * 42.

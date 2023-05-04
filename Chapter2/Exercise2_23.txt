@@ -1,0 +1,12 @@
+Exercise 2.23: Given a pointer p, can you determinewhether p points to a valid object?
+If so, how? If not, why not?
+
+The definition of a valid pointer is pointer pointing to an object, a location past the object or nullptr. That we can decide with
+if (p)
+{
+}else
+{
+
+}
+
+But what we can't determine is an uninitialized pointer in a block scope.

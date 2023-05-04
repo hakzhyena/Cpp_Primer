@@ -1,0 +1,10 @@
+Exercise 2.21: Explain each of the following definitions. Indicate whether any are illegal
+and, if so, why.
+int i = 0;
+(a) double* dp = &i; (b) int *ip = i; (c) int *p = &i;
+
+Ans:
+int i = 0; // an object of type int named i, initialized to 0
+a) double* dp = &i; // defined a pointer dp of type double, initialized it to point to i - oh this is illegal since the types of pointer and pointee are not matching.
+b) int *ip = i; // defined a pointer ip of type int and initializing it with i - illegal because a pointer can be assigned with an address of object of same type, not value or object itself
+c)  int *p = &i; // legal definition since an integer pointer p is assigned with the address of an integer i

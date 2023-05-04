@@ -1,0 +1,5 @@
+Exercise 2.19: Explain the key differences between pointers and references.
+Ans: reference is just an alias to an object where as a pointer is an object in its own right.
+A reference must be initialized (or bound to an object) as it is defined whereas a pointer can be uninitalized though it is not a good practice.
+A reference once bound to an object binds to it for its lifetime, where as a pointer can point to different objects through its lifetime.
+Operations on a reference are operations on the object it is bound to; one has to dereference the pointer in order to access the object it is pointing to.
