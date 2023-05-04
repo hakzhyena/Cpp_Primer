@@ -1,0 +1,7 @@
+Exercise 2.14: Is the following program legal? If so, what values are printed?
+int i = 100, sum = 0;
+for (int i = 0; i != 10; ++i)
+sum += i;
+std::cout << i << " " << sum << std::endl;
+
+Ans: I am assuming that all this is in a function, main() may be. The program is legal, values printed would be 9 and 45. Ah, upon testing I found that I was right about one thing and wrong about other. Since, at the time of std::cout, i is referred to from the outer scope, not the inner scope of for loop, the values printed would be 100 and 45
