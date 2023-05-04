@@ -1,5 +1,5 @@
 #include <iostream>
-
+//Since reference is just an alias of the object it is bound to, after the binding, all the operations on the reference are operations on the bound object, including but not limited to address of operation. Hence, when we fetch the address of the reference we just get the address of the bound object.
 int main()
 {
    int i = 1024;
