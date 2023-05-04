@@ -1,0 +1,9 @@
+Exercise 2.25: Determine the types and values of each of the following variables.
+(a) int* ip, i, &r = i; (b) int i, *ip = 0; (c) int* ip, ip2;
+
+Ans:
+
+(a) int* ip, i, &r = i; // ip is an integer pointer, i is an integer and r is a reference to integer i.
+(b) int i, *ip = 0; // i is an integer variabl, ip is a pointer to int initialized to 0.
+(c) int* ip, ip2; // ip is a pointer to int, ip2 is an integer.
+ 
