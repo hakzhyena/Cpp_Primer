@@ -1,0 +1,6 @@
+Exercise 2.17: What does the following code print?
+int i, &ri = i;
+i = 5; ri = 10;
+std::cout << i << " " << ri << std::endl;
+
+The above mentioned code would print 10 10 as all the operations on the reference are operations on the object it is bound to.

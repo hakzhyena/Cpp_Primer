@@ -1,0 +1,11 @@
+Exercise 2.16: Which, if any, of the following assignments are invalid? If they are valid, explain what they do.
+int i = 0, &r1 = i; double d = 0, &r2 = d;
+(a) r2 = 3.14159; (b) r2 = r1;
+(c) i = r2; (d) r1 = d;
+
+Ans:
+int i = 0, &r1 = i; double d = 0, &r2 = d;
+(a) r2 = 3.14159; //Perfectly valid, it just assigns this new literal value to d. d would have 3.14159.
+(b) r2 = r1; // should be valid, assigning an int to double. i would have 0.
+(c) i = r2; // assigning doulbe to int, should be fine, i would have 0.
+(d) r1 = d; // assigning double to int, should be good again! I would say with truncation but since it is 0 fine.
