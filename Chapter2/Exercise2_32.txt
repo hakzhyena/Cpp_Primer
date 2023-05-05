@@ -1,0 +1,4 @@
+Exercise 2.32: Is the following code legal or not? If not, how might you make it legal?
+int null = 0, *p = null;
+
+Ans: since p is a pointer it needs to be initialized with an address of the object. so assigning &null to p would make this code work by assigning address of null object to p pointer.
