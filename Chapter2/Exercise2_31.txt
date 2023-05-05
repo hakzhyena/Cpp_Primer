@@ -1,0 +1,18 @@
+Exercise 2.31: Given the declarations in the previous exercise determine whether the
+following assignments are legal. Explain how the top-level or low-level const applies
+in each case.
+r1 = v2;
+p1 = p2; p2 = p1;
+p1 = p3; p2 = p3;
+
+
+
+Ans: Copying previous declarations for reference:
+
+const int v2 = 0; int v1 = v2;
+int *p1 = &v1, &r1 = v1;
+const int *p2 = &v2, *const p3 = &i, &r2 = v2;
+
+a) r1 = v2; // not-legal since we are trying to initialize a non-const int reference with a const int value. v2 is a top-level const, r1 is non-const.
+b) p1 = p2; p2 = p1; //1. p1 is a non-const pointer to int pointing to const int, not possible. 2. p2 is pointer to int that should be treated as const trying to get assigned with p1 which is a non-const pointer. So, it is fine.
+c) p1 = p3; p2 = p3; //1. p3 is a const pointer wanting to point to int that should be treated as const, trying to assign it to p1 would not work because p1 doesn't promise to treat the assigned value as a const one. So not legal. 2. However assigning p3 to p2 is fine because p2 promised to treat the value pointed to by it as const.
