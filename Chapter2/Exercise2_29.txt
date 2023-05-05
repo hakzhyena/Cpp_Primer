@@ -1,0 +1,18 @@
+Exercise 2.29: Uing the variables in the previous exercise, which of the following assignments
+are legal? Explain why.
+(a) i = ic; (b) p1 = p3;
+(c) p1 = &ic; (d) p3 = &ic;
+(e) p2 = p1; (f) ic = *p3;
+
+So I am gonna copy the variables from previous exercise for reference here:
+(a) int i, *const cp; (b) int *p1, *const p2;
+(c) const int ic, &r = ic; (d) const int *const p3;
+(e) const int *p;
+
+Ans:
+(a) i = ic; // illegal, because assiging a const object to non-const object of same type isn't acceptable.
+(b) p1 = p3; //p3 is already illegal, I don't know how you would assign to p1.
+(c) p1 = &ic; //nope can't assign a const object's address to non-const pointer, that would make the access to const object writeable and that's not right.
+(d) p3 = &ic; //perfect, assigning a const pointer wishing to point to const int with a const int is fine. I don't see why not!
+(e) p2 = p1; //fine, why not. assigning  const pointer with an object just makes it point to it through its life.
+(f) ic = *p3; // assigning its own value to the object, redundant but sure, legal.
