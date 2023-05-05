@@ -1,0 +1,9 @@
+Exercise 2.26: Which of the following are legal? For those that are illegal, explainwhy.
+(a) const int buf; (b) int cnt = 0;
+(c) const int sz = cnt; (d) ++cnt; ++sz;
+
+Ans: 
+a) const int buf; - illegal, a const object must be initialized as and when it is created.
+b) int cnt = 0; // perfectly legal! I don't see why not!
+c) const int sz = cnt;// perfectly legal, here we have defined a const int and initialized it with a non-const value. But this is fine because while initializing a const it doesn't matter if it is initialized from const or non-const object. Because, once the copy from the object is done, the const object doesn't have access to it anymore.
+d) ++cnt; ++sz; // incrementing the value in a non-const variable, fine why not. increment a const variable, illegal, you can't do that. It is const for godsake!
