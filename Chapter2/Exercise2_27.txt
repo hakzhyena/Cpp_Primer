@@ -1,0 +1,14 @@
+Exercise 2.27: Which of the following initializations are legal? Explain why.
+(a) int i = -1, &r = 0; (b) int *const p2 = &i2;
+(c) const int i = -1, &r = 0; (d) const int *const p3 = &i2;
+(e) const int *p1 = &i2; (f) const int &const r2;
+(g) const int i2 = i, &r = i;
+
+Ans:
+(a) int i = -1, &r = 0; // This is illegal, here you you are intializing a reference to int to literal 0. reference can only bind to an lvalue.
+(b) int *const p2 = &i2; //Perfectly fine if i2 is an object of type int.
+(c) const int i = -1, &r = 0; Here the base type itself is const int, so it should be able to bind to 0 (an rvalue).
+(d) const int *const p3 = &i2; // if i2 is an object of type int, perfectly fine.
+(e) const int *p1 = &i2; // fine
+(f) const int &const r2; // a const reference pointing to int to be treated as const, but hold on - cv qualified const isn't accepted in gcc, given a warning in Visual studio. However, all I could find from standard that it was ill-formed code.
+(g) const int i2 = i, &r = i; // Fine
