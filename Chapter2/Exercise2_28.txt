@@ -1,0 +1,10 @@
+Exercise 2.28: Explain the following definitions. Identify any that are illegal.
+(a) int i, *const cp; (b) int *p1, *const p2;
+(c) const int ic, &r = ic; (d) const int *const p3;
+(e) const int *p;
+
+Ans: (a) int i, *const cp; //perfectly legal, although initializing the pointer would have been nice, wait this is const so it should be initialized. See, it's simple any const object must be initialized, because you can't change their value at later stage.
+(b) int *p1, *const p2; // p2 is illegal
+(c) const int ic, &r = ic; //Perfect
+(d) const int *const p3; // first const is not an issue, but the second const makes p3 a constant pointer, so it must be initialized like anyother const objects, it isn't. So illegal.
+(e) const int *p; //perfectly fine!
