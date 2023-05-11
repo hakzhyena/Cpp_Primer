@@ -6,7 +6,6 @@ rewrite the exercise from § 2.6.2 (p. 76).
 #define EXERCISE_2_42_SALES_DATA
 #include <iostream>
 
-using namespace std;
 struct Sales_data
 {
    std::string bookNo{};
@@ -15,7 +14,7 @@ struct Sales_data
    
    void print()
    {
-      cout << "bookNo:   " << bookNo << "   units_sold:   " << units_sold << "   revenue:   " << revenue << endl;
+      std::cout << "bookNo:   " << bookNo << "   units_sold:   " << units_sold << "   revenue:   " << revenue << std::endl;
    }
 };
 

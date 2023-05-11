@@ -6,7 +6,11 @@ rewrite the exercise from § 2.6.2 (p. 76).
 #include <map>
 #include <string>
 #include "Exercise2_42_Sales_data.h"
-
+using std::cin;
+using std::cout;
+using std::endl;
+using std::map;
+using std::string;
 /*
 1.5.1
 Exercise 1.20: http://www.informit.com/title/0321714113 contains a copy
