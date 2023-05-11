@@ -2,15 +2,15 @@
 decrement operator (--) that subtracts 1. Use the decrement operator to write a while
 that prints the numbers from ten down to zero.*/
 #include <iostream>
-
+using std::cout;
 int main()
 {
    int counter = 9;
    while(counter > 0)
    {
-      std::cout << counter;
+      cout << counter;
       counter--;
       if(counter > 0)
-         std::cout << "\n"; // write newline to output buffer for every value except the last one
+         cout << "\n"; // write newline to output buffer for every value except the last one
    }
 }

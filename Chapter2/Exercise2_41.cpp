@@ -4,11 +4,14 @@ the same file as your main function.*/
 
 #include <iostream>
 #include <map>
-using namespace std;
-
+using std::map;
+using std::cout;
+using std::cin;
+using std::string;
+using std::endl;
 struct Sales_data
 {
-   std::string bookNo{};
+   string bookNo{};
    unsigned units_sold{};
    double revenue{};
    
@@ -28,7 +31,7 @@ each transaction to the standard output.
 */
  void Exercise_1_5_1()
  {
-    Sales_data salesData;
+   Sales_data salesData;
    double price{};
    //Read a set of book sales transactions
    while (cin >> salesData.bookNo >> salesData.units_sold >> price)
