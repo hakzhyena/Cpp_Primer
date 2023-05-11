@@ -5,8 +5,9 @@ extern const int constInteger = 10; //As you can see, if you want to share a con
 int integer = 20;
 int main() 
 {
-	std::cout << "constInteger value is: " << constInteger << std::endl;
-	std::cout << "non-const integer value is: " << integer << std::endl;
-	modifierFun();
-	
+   int i{};
+   int& const ref = i;
+   std::cout << "constInteger value is: " << constInteger << std::endl;
+   std::cout << "non-const integer value is: " << integer << std::endl;
+   modifierFun();
 }
