@@ -28,11 +28,22 @@ void ReadLines()
    }
    
 }
-
+/* A class with default constructor*/
+class A
+{
+   public:
+   A()
+   {
+      cout << "Default constructor" << endl;
+   }
+};
 int main()
 {
    
    //ReadWords();
-   ReadLines();
+   //ReadLines();
+   //Both a and b definitions call default constructors
+   A a; 
+   A b{};
    return 0;
 }
