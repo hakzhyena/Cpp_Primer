@@ -15,7 +15,7 @@ using size_type = std::string::size_type;
 int main()
 {
    string input{}, inputSentence{};
-   size_type pnctcnt{};
+   decltype(inputSentence.size()) pnctcnt{};
    string puncts{};
    cin >> input;
    inputSentence = input;
