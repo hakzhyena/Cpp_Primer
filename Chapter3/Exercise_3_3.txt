@@ -1,0 +1,6 @@
+/*
+Exercise 3.3: Explain how whitespace characters are handled in the string input operator
+and in the getline function.
+*/
+
+In string input operator whitespaces are ignored. In getline funtions whitespace characters are ignored except \n. New Line Character is included when read from the stream but not added to string operator.
