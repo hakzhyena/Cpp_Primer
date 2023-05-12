@@ -20,9 +20,11 @@ void ReadWords()
 void ReadLines()
 {
    string line;
+   //Read lines that are longer than 80 chars only
    while(std::getline(cin,line))
    {
-      cout << line << endl;
+      if(line.size() > 80)
+         cout << line << endl;
    }
    
 }
@@ -30,7 +32,7 @@ void ReadLines()
 int main()
 {
    
-   ReadWords();
-   //ReadLines();
+   //ReadWords();
+   ReadLines();
    return 0;
 }
