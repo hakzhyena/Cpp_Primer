@@ -1,0 +1,7 @@
+
+Exercise 3.9: What does the following program do? Is it valid? If not, why not?
+string s;
+cout << s[0] << endl;
+
+
+Ans: Assuming the relevant header files are included and cout and endl are introduced that they are from std namespace to the global namespace, the code would produce undefined result, because the length of the string is 0, since it is an empty string and we can only access an index if it matches the following condition - index >= 0 && index < size - 1.
