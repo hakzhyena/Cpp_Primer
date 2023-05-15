@@ -1,0 +1,12 @@
+Exercise 3.12: Which, if any, of the following vector definitions are in error? For
+those that are legal, explain what the definition does. For those that are not legal,
+explain why they are illegal.
+(a) vector<vector<int>> ivec;
+(b) vector<string> svec = ivec;
+(c) vector<string> svec(10, "null");
+
+
+Ans:
+(a) vector<vector<int>> ivec; //legal: ivec is a vector that is empty. But you can add vector<int> elements to it.
+(b) vector<string> svec = ivec; //illegal - you can't assign a vector of one type to vector of another type
+(c) vector<string> svec(10,"null); // vector of 10 strings initialized to "null" each.
