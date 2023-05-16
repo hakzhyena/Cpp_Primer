@@ -1,0 +1,11 @@
+Exercise 3.19: List three ways to define a vector and give it ten elements, each with the value 42. Indicate whether there is a preferred way to do so and why.
+
+Ans:
+1) vector<int> ivec(10,42);
+2) vector<int> ivec{42, 42, 42, 42, 42, 42, 42, 42, 42, 42};
+3) vector<int> ivec;
+   for(int numOfElements = 10; numOfElements > 0; numOfElements--)
+      ivec.push_back(42);
+
+I would say the preferred way is the first one, because we know how many elements we want in advance and the value for each element (which is same for every element). So the first one is very clean and succint way of writing it.
+   
