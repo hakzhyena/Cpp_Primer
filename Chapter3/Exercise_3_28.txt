@@ -1,0 +1,13 @@
+Exercise 3.28: What are the values in the following arrays?
+string sa[10];
+int ia[10];
+int main() {
+string sa2[10];
+int ia2[10];
+}
+
+Ans:
+(1) string sa[10]; - 10 empty strings
+(2) int ia[10]; - 10 ints of 0 value each
+(3) string sa2[10] - 10 empty strings
+(4) int ia2[10]; - 10 undefined value ints
