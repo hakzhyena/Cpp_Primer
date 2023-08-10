@@ -1,0 +1,4 @@
+Exercise 3.26: In the binary search program on page 112, why did we write mid = beg
++ (end - beg) / 2; instead of mid = (beg + end) /2;?
+
+Because we want to be referring to the iterator than the difference_type value. mid = (beg + end) / 2 would just give us the location of the mid not the mid itself.
