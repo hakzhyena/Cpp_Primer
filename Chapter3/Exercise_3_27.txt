@@ -1,0 +1,15 @@
+Exercise 3.27: Assuming txt_size is a function that takes no arguments and returns
+an int value, which of the following definitions are illegal? Explain why.
+unsigned buf_size = 1024;
+(a) int ia[buf_size]; (b) int ia[4 * 7 - 14];
+(c) int ia[txt_size()]; (d) char st[11] = "fundamental";
+
+Ans: int txt_size(){}
+
+(a) illegal because array dimension is not a const expression.
+
+(b) legal
+
+(c) illegal because txt_size() returns an int not constexpr int
+
+(d) st doesn't have space for null terminator, hence illegal declaration.
